@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Chanllenge ONE: Tex encrypter</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+            <a href="https://www.iojanrodez.com"><img class="logo-img" src="images/logo.png" alt="Iojan Rodez logo"></a>
+            <h1 class="title-logo">Text encrypter</h1>
+        </div>
+        <div class="left">
+            <textarea class="text-input" id="inputTexto" type="text" autofocus placeholder="Enter text here ( •̀ ω •́ )y"></textarea>
+        </div>
+            <div class="right">
+            <img src="images/sol.png" alt="sun" id="imgDer">
+            <h1 id="texto">o(*￣▽￣*)ブ</h1>
+            <textarea id="texto2" rows="8" cols="50" placeholder="Nothing to encrypt (┬┬﹏┬┬)"></textarea>
+            <button id="copiar" type="button" name="button" onclick="copiar()">Copy</button>
+        </div>
+        <div class="left-button">
+            <div id="aviso">
+            <img src="images/atencion.png" alt="! logo">
+            <p>Only lowercase letters. ╰(￣ω￣ｏ)</p>
+        </div>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">Encrypt</button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()">Decrypt</button>  
+        </div>
+    </body>
+    <footer>
+        <a href="https://https://www.iojanrodez.com/información/acerca-de-iojan-rodez"><img src="images/footer.png" alt="Iojan Rodez social media"></a>
+        <p id="copyright">&copy Iojan Rodez 2023</p>
+    </footer>
+</html>

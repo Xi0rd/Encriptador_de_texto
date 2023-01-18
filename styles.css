@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;   
+}
+.logo{
+    float: left;
+    width: 100%;
+}
+.logo-img{
+    width: 10%;
+    margin-top: 1%;
+    margin-left: 5%;
+    float: inherit;
+}
+.title-logo{
+    float: inherit;
+    margin-left: 15%;
+    color: whitesmoke;
+    text-align: center;
+}
+.container{
+    margin: auto;
+    width: 850px;
+    height: 650px;
+    padding: 5px;
+}
+.left{
+    float: left;
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  
+}
+.left-button{
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+}
+.right{
+    float: right;
+    width: 30%;
+    height: 558px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    border: 1px solid cyan;
+}
+.text-input{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 60%;
+    color: whitesmoke;
+    font-size: 24px;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    outline: none;
+    background: black;  
+}
+#imgDer{
+    margin-left: 2%;
+    margin-top: 5%;
+    width: 90%;
+    height: auto;
+}
+#texto{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+#texto2{
+    float: left;
+    margin-left: 10%;
+    color: whitesmoke;
+    background-color: black;
+    width: 80%;
+    height: 35%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+#btn-encriptar{
+    padding: 2px;
+    width: 200px;
+    height: 40px;
+    border-style: groove;
+    border-color: aqua;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: black;
+    color: #fff;
+    font-size: 24px;
+    background-image: url("images/decrypt.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 12px;
+    background-position-y: 4px;
+}
+#btn-encriptar:hover{
+    background-image: url("images/encrypt.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+button:active{
+    transform: translateY(3px);
+}
+#btn-desencriptar{
+    padding: 2px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid cyan;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: black;
+    color: whitesmoke;
+    font-size: 24px;
+    background-image: url("images/encrypt.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 10px;
+    background-position-y: 4px;
+}
+#btn-desencriptar:hover{
+    background-image: url("images/decrypt.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+#copiar{
+    margin-left: 10%;
+    margin-top: 495px;
+    padding: 2px;
+    width: 200px;
+    height: 40px;
+    background: black;
+    border-radius: 24px;
+    display: none;
+    font-size: 24px; 
+    border: 1px solid cyan;
+    color: whitesmoke;
+}
+#aviso{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: whitesmoke;
+}
+.candados{
+    height: 20px;
+}
+footer img{
+    width: 100%;
+    margin-top: 50px;
+}
+footer p{
+    position: relative;
+    color: whitesmoke;
+    text-align: center; 
+}
+@media screen and (max-width:480px){
+    .container{
+        width: 100%;
+        text-align: center;      
+    }
+    .left{
+        width: 100%;
+        height: 30%;
+    }
+    #texto2{
+        padding: 10px;
+        height: 45%;
+        margin-bottom: 15px;
+    }
+    .right{
+        width: 100%;
+        height: 40%;
+    }
+    #imgDer{
+        display: none;
+    }
+    .left-button{
+        width: 100%;
+    }
+    #copiar{
+        margin-top: 100px;
+        margin-left: 25%;
+    }
+    footer{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
